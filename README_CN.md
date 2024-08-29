@@ -4,9 +4,11 @@
 
 [Readme_EN](https://github.com/Gu-f/LatexToWord/blob/main/README.md)  
 
-## USAGE  
+## 用法  
+### 安装  
 `pip install latex2word`  
 
+### 示例  
 ```python
 from docx import Document
 from latex2word import LatexToWordElement

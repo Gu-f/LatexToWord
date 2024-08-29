@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: latex2word
+Version: 1.0
+Summary: A pure python library implemented by python3 for writing Latex formulas to word.
+Author: Gu-f
+Project-URL: Homepage, https://github.com/Gu-f/LatexToWord
+Project-URL: Bug Tracker, https://github.com/Gu-f/LatexToWord/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: mathml2omml~=0.0.2
+Requires-Dist: latex2mathml~=3.77.0
+Requires-Dist: lxml~=5.3.0
+
+# LatexToWord
+A pure python library implemented by python3 for writing Latex formulas to word.
+
+
+[Readme_CN](https://github.com/Gu-f/LatexToWord/blob/master/README_CN.md)  
+
+## USAGE  
+`pip install latex2word`  
+
+```python
+from docx import Document
+from latex2word import LatexToWordElement
+
+"""
+`pip install python-docx`  
+常规用法  
+General usage.  
+"""
+
+# 公式(Latex string)
+latex_input = r"x={-b \pm \sqrt{b^2-4ac}\over 2a}"
+# 构建latex_to_word对象 (Build latex_to_word objects)
+latex_to_word = LatexToWordElement(latex_input)
+
+# 插入word公式(Create the docx file and insert the element)
+doc = Document()
+paragraph = doc.add_paragraph()
+latex_to_word.add_latex_to_paragraph(paragraph)
+
+doc.save('test.docx')
+```  
+Result:  
+![demo](./images/demo.png)  
+

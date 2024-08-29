@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "latex2word"
+version = "1.0"
+authors = [
+  { name="Gu-f" },
+]
+dependencies = [
+    "mathml2omml~=0.0.2",
+    "latex2mathml~=3.77.0",
+    "lxml~=5.3.0"
+]
+description = "A pure python library implemented by python3 for writing Latex formulas to word."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Gu-f/LatexToWord"
+"Bug Tracker" = "https://github.com/Gu-f/LatexToWord/issues"

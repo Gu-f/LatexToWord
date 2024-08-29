@@ -2,7 +2,7 @@
 纯Python实现的python3库，用于将Latex公式写入word。
 
 
-[Readme_EN](https://github.com/Gu-f/LatexToWord/blob/master/README.md)  
+[Readme_EN](https://github.com/Gu-f/LatexToWord/blob/main/README.md)  
 
 ## USAGE  
 `pip install latex2word`  

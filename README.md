@@ -2,7 +2,7 @@
 A pure python library implemented by python3 for writing Latex formulas to word.
 
 
-[Readme_CN](https://github.com/Gu-f/LatexToWord/blob/master/README_CN.md)  
+[Readme_CN](https://github.com/Gu-f/LatexToWord/blob/main/README_CN.md)  
 
 ## USAGE  
 `pip install latex2word`  

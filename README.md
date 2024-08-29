@@ -30,5 +30,5 @@ latex_to_word.add_latex_to_paragraph(paragraph)
 doc.save('test.docx')
 ```  
 Result:  
-![demo](./images/demo.png)  
+![demo](https://raw.githubusercontent.com/Gu-f/LatexToWord/main/images/demo.png)  
 

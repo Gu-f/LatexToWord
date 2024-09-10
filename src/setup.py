@@ -2,7 +2,7 @@ from distutils.core import setup
 
 setup(
     name='latex2word',
-    version='1.0',
+    version='1.1',
     author='Gu-f',
     packages=['src/latex2word'],
     scripts=[],

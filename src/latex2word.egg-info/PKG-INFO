@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: latex2word
-Version: 1.0
+Version: 1.1
 Summary: A pure python library implemented by python3 for writing Latex formulas to word.
 Author: Gu-f
 Project-URL: Homepage, https://github.com/Gu-f/LatexToWord
@@ -19,11 +19,13 @@ Requires-Dist: lxml~=5.3.0
 A pure python library implemented by python3 for writing Latex formulas to word.
 
 
-[Readme_CN](https://github.com/Gu-f/LatexToWord/blob/master/README_CN.md)  
+[Readme_CN](https://github.com/Gu-f/LatexToWord/blob/main/README_CN.md)  
 
 ## USAGE  
+### Install  
 `pip install latex2word`  
 
+### Example  
 ```python
 from docx import Document
 from latex2word import LatexToWordElement
@@ -47,5 +49,5 @@ latex_to_word.add_latex_to_paragraph(paragraph)
 doc.save('test.docx')
 ```  
 Result:  
-![demo](./images/demo.png)  
+![demo](https://raw.githubusercontent.com/Gu-f/LatexToWord/main/images/demo.png)  
 

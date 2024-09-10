@@ -11,7 +11,7 @@ class OMMLMath(Math):
         _START = '<m:oMath>'
         _END = '</m:oMath>'
         xml_text = math_xml_text[len(_START):-len(_END)]
-        return '<m:oMath {xmlns}>%s</m:oMath>' % xml_text
+        return xml_text
 
 
 class OMMLMathMLHandler(MathMLHandler):
@@ -26,3 +26,7 @@ class OMMLMathMLHandler(MathMLHandler):
         if name not in OMMLMathMLHandler.CONVERSION_MAP:
             raise NotImplementedError(name + ' is not Implemented')
         self._stack.append(OMMLMathMLHandler.CONVERSION_MAP[name](attrs))
+
+    def result(self):
+        xml_text = super().result()
+        return '<m:oMath {xmlns}>{xml_text}</m:oMath>', xml_text

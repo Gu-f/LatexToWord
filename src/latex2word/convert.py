@@ -45,7 +45,8 @@ class LatexToWordElement(object):
 
     def element(self):
         self._mathml = latex2mathml.converter.convert(self.latex)
-        self._omml = _convert(self._mathml).format(xmlns=self._build_xmlns())
+        o_math, xml_text = _convert(self._mathml)
+        self._omml = o_math.format(xmlns=self._build_xmlns(), xml_text=xml_text)
         return etree.fromstring(self._omml)
 
     def add_latex_to_paragraph(self, paragraph):

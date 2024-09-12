@@ -1,4 +1,6 @@
-# LatexToWord
+# LatexToWord  
+[![Downloads](https://static.pepy.tech/badge/latex2word/month)](https://pepy.tech/project/latex2word)
+
 A pure python library implemented by python3 for writing Latex formulas to word.
 
 

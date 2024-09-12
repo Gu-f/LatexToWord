@@ -1,4 +1,6 @@
-# LatexToWord
+# LatexToWord  
+[![Downloads](https://static.pepy.tech/badge/latex2word/month)](https://pepy.tech/project/latex2word)
+
 纯Python实现的python3库，用于将Latex公式写入word。
 
 
